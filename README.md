@@ -37,9 +37,7 @@ php artisan migrate:fresh --seed
 > Dependencias para el proyecto y otros pasos
 
 ```
-sudo apt-get install php-mysql
-sudo apt-get install php-xml
-sudo apt-get install php-curl
+sudo apt-get install php-mysql php-xml php-curl
 ```
 
 >borrar node_modules, vendor y .lock 
