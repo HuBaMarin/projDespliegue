@@ -1,18 +1,28 @@
 ## Proceso de Pre-Instalación
 >Crear carpeta node_modules
-```
+```sh
 npm install 
-``` 
+```
+
+> Actualizar carpeta node_modules
+```sh
+npm update 
+```
 
 >Crear la carpeta vendor
 ```php 
 composer install 
 ```
 
-## Proceso de Post-Instalación
+> Actualizar carpeta vendor
+```php 
+composer update 
+```
+
+## Proceso de Post-Instalación (linux o windows)
 > Para ejecutar el proyecto en el navegador
-```php
-php artisan serve &
+ ```sh
+   docker-compose up -d
 ```
 
 > Compilar los estilos de tailwind
@@ -24,16 +34,17 @@ npm run dev
 
 > Ejecutar las pruebas
 ```php
-php artisan test
+docker-compose exec app php artisan test
 ```
 
 > Migrar tablas y borrarlas
 
 ```php
-php artisan migrate:fresh --seed
-
+docker-compose exec app php artisan migrate:fresh --seed
 ```
+
 ## Ubuntu
+
 > Dependencias para el proyecto y otros pasos
 
 ```
@@ -41,7 +52,8 @@ sudo apt-get install php-mysql php-xml php-curl
 ```
 
 >borrar node_modules, vendor y .lock 
- para el node
+
+>para el node
 
 ```
 nvm install 
@@ -53,24 +65,18 @@ nvm install
 sudo apt install composer
 ```
 
-crear archivo .env
+cambiar archivo env-development por .env
 
 crear bbdd en phpmyadmin
 
 ```
 sudo /opt/lampp/lampp start/restart/stop
+```
 
+```
 sudo apt-get install nodejs npm
 ```
 
-> En la carpeta del proyecto
-```
-composer install
-npm install
-```
-> Para ejecutar el proyecto
 
-```
-npm run dev
-php artisan migrate:fresh --seed
-```
+
+
