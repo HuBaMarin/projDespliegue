@@ -65,7 +65,13 @@
           <mxGeometry y="90" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="GFfZZeM1FlcKJLDyZN8a-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="GFfZZeM1FlcKJLDyZN8a-25" target="GFfZZeM1FlcKJLDyZN8a-55" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="414" y="270" />
+              <mxPoint x="500" y="270" />
+              <mxPoint x="500" y="235" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="GFfZZeM1FlcKJLDyZN8a-25" value="Actividades" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="344" y="340" width="140" height="180" as="geometry" />
